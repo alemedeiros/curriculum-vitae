@@ -7,7 +7,7 @@
 % % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % created: 2013-05-26
-% last revision: 2016-04-20
+% last revision: 2017-03-30
 
 \documentclass[10pt,a4paper,sans]{moderncv}
 \usepackage{fullpage}
@@ -32,14 +32,16 @@
 \homepage{http://alemedeiros.xyz}
 \social[github]{alemedeiros}
 \social[linkedin]{alemedeiros}
+\photo[50pt][0.7pt]{alemedeiros}
+% \quote{``I must think of something!'' - Alexandre Medeiros}
 
 \begin{document}
-\makecvtitle{}
-\section{Summary}{A versatile programmer with distinguished academic performance. Interested in several areas of Computer Science, ranging from Operating Systems and low level programming to high level and abstract concepts as Functional Programming and MapReduce programming model. I enjoy learning new skills and facing challenges, my goal is to never stop growing up professionally and personally.}
+\makecvtitle
+\section{Summary}{A versatile programmer with distinguished academic performance. Interested in several areas of Computer Science, ranging from Operating Systems and low level programming to high level and abstract concepts as Functional Programming and MapReduce programming model. I enjoy learning new skills and facing challenges, my main carreer goal is to never stop growing up professionally and technically.}
 
 \section{Education}
-\cventry{2011 --- present}{B.Sc. Computer Science}{University of Campinas}{Campinas, São Paulo, Brazil}{Ongoing (Expected graduation: December 2016)}{%
-	Current average grade: 8.6/10\newline
+\cventry{2011 --- 2016}{B.Sc. Computer Science}{University of Campinas}{Campinas, São Paulo, Brazil}{}{%
+  Graduated with honours (GPA 8.6/10)\newline
 	Pascal Award 2014 (Best academic performance of Computer Science students)
 }
 \cventry{September 2014 --- August 2015}{B.Sc. Computer Science}{Queen Mary University of London}{London, United Kingdom}{}{Associate Student (Funded by Brazilian Government Scholarship: Science without Borders)}
@@ -48,8 +50,15 @@
 
 \subsection{Professional}
 
-\cventry{December 2015 --- March 2016}{Health Search Exploration}{Software Engineering Intern}{Google}{Belo Horizonte, Minas Gerais, Brazil}{%
-	Host: Bruno Gusmão
+\cventry{September 2016 --- Present}{Software Engineer}{Nubank}{São Paulo, São Paulo, Brazil}{}{%
+  Back-end developtment in a microservices architecture.\newline
+  Main Language: Clojure
+}
+
+\cventry{December 2015 --- March 2016}{Software Engineering Intern}{Google}{Belo Horizonte, Minas Gerais, Brazil}{Health Search Exploration}{%
+  Data Analysis and new products explorations\newline
+	Host: Bruno Gusmão\newline
+  Main Language: C++
 }
 
 \subsection{Academic}
@@ -60,12 +69,13 @@
 	Funded by a Samsung Scholarship
 }
 
-\cventry{2013}{Intel Embedded Systems Competition 2013}{\nth{2} place}{III Brazilian Symposium on Computing Systems Engineering}{Niterói, Rio de Janeiro, Brazil}{%
-	Group: Gabriel Krisman Bertazi, Augusto dos Santos Morgan e Alexandre Medeiros\newline
+\cventry{2013}{SINAR: A low-cost image-based speed radar}{Intel Embedded Systems Competition 2013}{III Brazilian Symposium on Computing Systems Engineering}{Niterói, Rio de Janeiro, Brazil}{%
+  \nth{2} place project\newline
+	Group: Gabriel Krisman, Augusto Morgan e Alexandre Medeiros\newline
 	Supervisors: Prof.\ Siome Goldenstein e Prof.\ Edson Borin
 }
 
-\cventry{2012 --- 2016}{Teaching Assistant}{Programa de Apoio Didático}{University of Campinas}{Campinas, São Paulo, Brazil}{%
+\cventry{2012 --- 2016}{Teaching Assistant}{}{University of Campinas}{Campinas, São Paulo, Brazil}{%
 	\begin{itemize}
 		\item Object Oriented Programming --- \nth{1} semester of 2016
 		\item Algorithm and Computer Programming --- \nth{1} semester of 2014
@@ -78,19 +88,20 @@
 
 \subsection{Volunteer}
 
-\cventry{2011 --- 2014}{Administrative Officer}{CACo (Centro Acadêmico da Computação)}{University of Campinas}{Campinas, São Paulo, Brazil}{Unicamp Computing Students' Union (CACo)}
+\cventry{2011 --- 2014}{Administrative Officer}{CACo (Centro Acadêmico da Computação)}{University of Campinas}{Campinas, São Paulo, Brazil}{Unicamp Computing Students' Union}
 
 \cventry{2012 --- 2013}{Undergraduate Representative}{Institute of Computing}{University of Campinas}{Campinas, São Paulo, Brazil}{Undergraduate representative in the Undergraduate Affairs Commission of the Institute of Computing during the 2012--13 term}
 
 \cventry{2012, 2013}{Basic GNU/Linux Instructor for Freshmen}{GPSL (Grupo Pró Software Livre)}{University of Campinas}{Campinas, São Paulo, Brazil}{Basic GNU/Linux classes for Computing Students organized by the Pro-Free Software Group (GPSL)}
 
 \section{Technical Skills}
-\cvitem{Basic}{ARM Assembly, VHDL, Go, Lua, JavaScript, PHP, SQL, Django Web Framework}
-\cvitem{Intermediate}{Haskell, GNU/Linux Operating Systems, Parallel Programming, Shell Script, git, \LaTeX{}, Java}
+\cvitem{Basic}{ARM Assembly, VHDL, Go, Lua, JavaScript}
+\cvitem{Intermediate}{Clojure, Haskell, GNU/Linux Operating Systems, Parallel Programming, Shell Script, git, \LaTeX{}, Java}
 \cvitem{Advanced}{C/C++, Python}
 
 \section{Languages}
-\cvlanguage{Brazilian Portuguese}{Fluent}{Native Language}
+\cvlanguage{Portuguese}{Fluent}{Native Language}
 \cvlanguage{English}{Fluent}{Overall of 8.0 on IELTS Academic test (2013)}
+\cvlanguage{French}{Basic}{}
 
 \end{document}
