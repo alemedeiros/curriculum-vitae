@@ -1,20 +1,20 @@
-% cv-en.tex
+% cv.tex
 %   by alemedeiros <alexandre.n.medeiros _at_ gmail.com>
 %
-% my curriculum vitae -- english version
+% my curriculum vitae
 %
 % License:
 % % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % created: 2013-05-26
-% last revision: 2017-03-30
+% last revision: 2020-02-09
 
 \documentclass[9pt,a4paper,sans]{moderncv}
 \usepackage{fullpage}
-\usepackage[british]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{roboto}
+\usepackage[sfdefault]{FiraSans}
 
 \usepackage[super]{nth}
 
@@ -29,7 +29,7 @@
 % \title{Curriculum Vitae}
 \mobile{+55~(11)~96624~2947}
 \email{alexandre.n.medeiros@gmail.com}
-\homepage{alemedeiros.xyz}
+\homepage{alemedeiros.dev}
 \social[github]{alemedeiros}
 \social[linkedin]{alemedeiros}
 % \photo[50pt][0.7pt]{alemedeiros}
@@ -37,48 +37,71 @@
 
 \begin{document}
 \makecvtitle
-\section{Summary}{My professional interests range from abstract and high level concepts as Functional Programming to Operating and Distributed Systems. Designing and implementing solutions focused on code quality and scalability is the main goal of my career.}
+\section{Summary}{%
+  Passionate about technology and computing from an early age, Computer Science
+  was always the obvious choice for me. During my studies I fell deep in love
+  with several computing areas, ranging from abstract and high level concepts
+  such as Functional Programming, Cryptography, and Theory of Computation to
+  more concrete and lower level topics like Distributed Systems, Cloud
+  Computing, and Information Security. With a great drive to excell and learn,
+  I always strive to create reliable and scalable systems through good practices
+  like extensive testing, code reviews, and incremental deliveries.
+}
 
 \section{Education}
-\cventry{2011 --- 2016}{\href{http://www.ic.unicamp.br/}{University of Campinas}}{B.Sc. Computer Science}{Campinas}{}{%
-  Graduated with honors (GPA 8.6/10)\newline
-  \href{http://www.ic.unicamp.br/sobre/institucional/premios/listacompleta}{Pascal Award 2014} (Best academic performance of Computer Science students)
+
+\cventry{2011 --- 2016}{\href{https://ic.unicamp.br/}{University of Campinas}}{B.Sc. Computer Science}{Campinas}{}{%
+  Graduated with honors. GPA 8.6 out of 10.\newline
+  \href{https://ic.unicamp.br/conheca-o-ic/premiacoes/premiados/}{Pascal Award 2014} (Best academic performance of Computer Science students).\newline
 }
+
 \cventry{September 2014 --- August 2015}{\href{http://www.qmul.ac.uk/}{Queen Mary University of London}}{B.Sc. Computer Science}{London}{}{%
-  Associate Student (\href{http://www.cienciasemfronteiras.gov.br/}{Science without Borders})
-  }
+  Associate Student (Sponsored by \href{http://www.cienciasemfronteiras.gov.br/}{Science without Borders} Brazilian government program).\newline
+}
 
 \section{Experience}
 
-\subsection{Professional}
+\subsection{\href{https://nubank.com.br}{Nubank}}
 
-\cventry{September 2016 --- Present}{\href{https://nubank.com.br}{Nubank}}{Backend Software Engineer }{2 years}{São Paulo}{%
-  Tech Lead role on Rewards squad since June 2018.\newline
-  Micro-services architecture\newline
-  \href{https://www.nubank.com.br/rewards}{Nubank Rewards} Program Launch and Maintenance.\newline
-  Rewards refactoring, improving performance and the user experience.\newline
-  Credit Card Bill PDF rendering refactor and optimization.\newline
-  Main Language: Clojure
+\cventry{March 2019 --- Present}{Software Engineer}{Security Engineering Squad}{Current Position}{São Paulo}{%
+  Reimplementation of microservices' loading of Certificate Revokation List, reaching great performance and cost improvements.\newline
+  Secrets Management System for creating and automatically rotating secrets.\newline
 }
 
-\cventry{December 2015 --- March 2016}{\href{https://google.com}{Google}}{Software Engineering Intern}{3 months}{Belo Horizonte}{%
-  Health Search exploration project.\newline
-	Host: Bruno Gusmão\newline
-  Main Language: C++
+\cventry{June 2018 --- March 2019}{Software Engineer Tech Lead}{Rewards Squad}{9 months}{São Paulo}{%
+  Rewards big refactoring, improving performance and the user experience.\newline
+  Lead a team of 3 to 4 engineers.\newline
+}
+
+\cventry{January 2017 --- June 2018}{Software Engineer}{Rewards Squad}{18 months}{São Paulo}{%
+  \href{https://www.nubank.com.br/rewards}{Nubank Rewards} Program Launch Plan.\newline
+  Program feature testing and incremental improvements.\newline
+}
+
+\cventry{September 2016 --- January 2017}{Software Engineer}{Bills Squad}{4 months}{São Paulo}{%
+  Credit Card Bill PDF rendering refactor and optimization.\newline
+}
+
+\subsection{Google}
+
+\cventry{December 2015 --- March 2016}{Software Engineering Intern}{Health Search}{3 months}{Belo Horizonte}{%
+  Exploration project. Host: Bruno Gusmão.\newline
 }
 
 \subsection{Academic}
 
-\cventry{2012 --- 2016}{\href{http://www.ic.unicamp.br/}{University of Campinas}}{Teaching Assistant}{6 terms}{Campinas}{%
-  Teaching assistant for Object Oriented Programming, Algorithm and Computer Programming, Basic Organization of Computers and Assembly Language, Data Structures
+\cventry{2012 --- 2016}{Teaching Assistant}{\href{https://ic.unicamp.br/}{University of Campinas}}{6 terms}{Campinas}{%
+  Teaching assistant for Data Structures, Algorithm and Computer Programming, Basic Organization of Computers and Assembly Language, and Object Oriented Programming.\newline
 }
 
 \section{Technical Skills}
-\cvitem{Familiar}{C/C++, Python, Clojure, Haskell, Shell Script}
-\cvitem{Basic}{Go, Lua, JavaScript, Java}
+\cvitem{Comfortable}{Clojure, Python, Shell Script}
+\cvitem{Familiar}{C/C++, Haskell, Java}
+\cvitem{Basic}{Go, Lua, JavaScript}
 
 \section{Languages}
 \cvlanguage{Portuguese}{Native Language}{}
 \cvlanguage{English}{Fluent}{}
+\cvlanguage{French}{Beginner}{}
 
 \end{document}
